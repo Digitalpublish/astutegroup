@@ -1,0 +1,47 @@
+h3{
+    color:#1452b4;
+    text-transform:none;
+}
+
+.fa-globe:before {
+    content: "\f0ac";
+    font-size: 149px;
+    color: cadetblue;
+}
+
+.col-2{
+    width: 90px;
+    flex: none;
+    max-width: none;
+}
+
+.col-2 img{
+    width:100%;
+    width: 100%;
+    border-radius: 20%;
+    opacity: 0.8;
+    border: solid 4px #f65d5d;
+    box-shadow: 0 0 9px 2px #666666;
+}
+
+table tr:hover td, table tr:hover th{
+    background: #cccccc;
+}
+
+a.text-small{
+    font-size: 15px !important;
+}
+
+.img{
+    width:100px;
+    margin: 10px auto;
+}
+
+.container.mission .col{
+    text-align: center;
+}
+
+.row.leaders .col img{
+    max-height: 150px;
+    height: 150px;
+}

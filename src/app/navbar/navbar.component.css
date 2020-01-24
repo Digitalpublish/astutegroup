@@ -1,0 +1,132 @@
+.bg-light {
+    /* background-color: #f8f9fa!important; */
+    background-color: #ffffff!important;
+}
+
+.navbar-nav li a{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 14px;
+    margin-right: 20px;
+    font-weight: 400;
+    border-bottom: solid 5px #ffffff;
+}
+
+.nav-item.active a{
+    background: #b8d3ef;
+    border-bottom: solid 5px #083769 !important; 
+}
+
+.navbar-nav li a:hover{
+    background: #b8d3ef;
+    border-bottom: solid 5px #083769;
+    transition: background 2s;
+}
+
+.navbar-nav li div a{
+    background: #b8d3ef;
+    border-bottom: solid 5px #083769 !important;
+}
+
+.navbar-nav li div a:hover, .navbar-nav li div a{
+    border-bottom: none;
+    font-weight: 400;
+}
+
+.navbar-nav li div a:hover{
+    background:#083769 ;
+    transition: background 1s;
+    color:#ffffff;
+}
+
+.dropdown-toggle::after{
+    border: none !important;
+    display: none;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem !important;
+}
+
+.dropdown-divider {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.width-100{
+    width:100px;
+}
+
+.width-80{
+    width: 80px;
+}
+
+.mr-auto.navbar-right {
+    margin-right: 0!important;
+    margin-left: auto;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+    margin-right: 0 !important;
+    margin-left: 20px;
+}
+
+.col.banner{
+    background: #083769;
+    color: white;
+    font-size: 15px;
+    height: 15px;
+}
+
+.logo-text a{
+    font-size: 28px;
+    line-height: 28px;
+    color: #7e5b48;
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+}
+
+.container.border-bottom{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:480px){
+    .logo-text a{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .navbar-toggler {
+        font-size: 15px;
+    }
+
+.bg-light{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+}
+
+.navbar-brand{
+    position: relative;
+}
+
+.tag-line{
+    font-size: 12px !important;
+    display: block !important;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    color: #083769;
+    font-style: italic;
+    font-family: script;
+}

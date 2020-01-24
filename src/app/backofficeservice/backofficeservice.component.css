@@ -1,0 +1,33 @@
+.col-6 h4{
+    display: none;
+}
+
+.col-6{
+    text-align: center;
+}
+
+.col-6 img{
+    width:70%;
+    opacity: 0.5;
+    
+}
+
+.col-6 img:hover{
+    opacity: 1;
+}
+
+.col-6 p{
+    margin: 10px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    text-align: left;
+}
+
+@media screen and (max-width:480px){
+    .col-6{
+        display: block !important;
+        flex: none;
+    max-width: none;
+    }
+
+}

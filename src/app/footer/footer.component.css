@@ -1,0 +1,135 @@
+.footer-image{
+    margin-left:-15px;
+    margin-right: -15px;
+}
+
+.pd0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.bg-black{
+    background: #083769;
+    /* min-height: 300px; */
+    padding: 20px 0;
+}
+
+.bg-black h5{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.list-no-style{
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.list-no-style li{
+    margin-left:0;
+}
+
+.bg-black li{
+    color: #ffffff !important;
+    font-size: 12px;
+}
+
+.bg-black li a:hover{
+    border-bottom: solid 1px #cccccc;
+}
+
+.bg-black li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.width-100{
+    width:100% !important;
+    opacity: .7;
+}
+
+p{
+    font-size: 12px;
+}
+
+.mts2{
+    margin-top: 20px;
+}
+
+.pd0{
+    padding: 0 !important;
+}
+
+.col.top-padding{
+    padding-top: 10px;
+    background: #000000;
+}
+
+.col.top-padding p{
+    color: #ffffff;
+}
+
+.col.top-padding .col{
+    position: relative;
+}
+
+.top-page{
+    border-radius: 100%;
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    position: absolute;
+    bottom: 25px;
+    right: -30px;
+    border: none;
+    line-height: 36px;
+    font-size: 25px;
+    border: solid 2px #ffffff;
+}
+
+
+.top-page:hover{
+    background: orange;
+    border: solid 1px rgb(226, 153, 43);
+    box-shadow: 0 0 5px 5px #cccccc;
+    /* transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transition: transform 2s; */
+}
+
+.col .live{
+    margin-top: 15px;
+}
+
+.col .live, .col .hits, .col .contact{
+    color:#ffffff;
+    font-size: 17px;
+    margin-bottom: 5px;
+    
+}
+
+.col .live img, .col .hits img, .col .contact img{
+    height:20px;
+}
+
+.col .live i, .col .hits i, .col .contact i{
+    color: orange;
+    max-width:35px;
+    width: 35px;
+    display: inline-flex;
+}
+
+@media screen and (max-width:480px){
+    .col.width-full{
+        width:100% !important;
+        flex-basis: auto !important;
+    }
+    .top-page{
+        right: 0 !important;
+        bottom: 60px !important;
+    }
+}

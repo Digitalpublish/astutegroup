@@ -1,0 +1,39 @@
+
+
+.col-6 img{
+    width:100% !important;
+    height: 100%;
+}
+
+
+.col-6 + .col-6{
+    background: #cccccc;
+    padding-top: 15px;
+}
+
+.padding{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.row .col-6:first-child{
+    padding-left:0 !important;
+}
+.row .col-6:first-child + .col-6{
+align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    .col-6{
+        width:100% !important;
+        flex: 0 0 100%;
+    max-width: 100%;
+    /* padding: 0 !important; */
+    }
+    .col-6:first-child{
+        padding-right: 0 !important;
+    }
+
+}

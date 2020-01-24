@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+h3{
+    color: #083769 !important;
+    text-transform: none;
+    font-size:23px;
+}
+
+.disable-text-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+@media screen and (max-width:480px){
+    body{
+        font-size: 80% !important;
+    }
+    }

@@ -1,0 +1,540 @@
+<div class="container">
+    <div class="row"> 
+        <div class="col">
+        <h3>Contact Us</h3>
+    </div>
+    </div>
+    <div class="row border-bottom mb2">
+        <div class="col-4 width-480">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 first"><i class="fa fa-map-marker"  aria-hidden="true"></i></div>
+                    <div class="col-8 second"><h4>Office Address</h4> 
+                        <p><b>Astute Aunlimited Inside India Pvt. Ltd.</b><br />
+                            D-37 & D-22, Ground Floor,<br />
+                            South Extension Part 1,<br />
+                            New Delhi, Pincode 110 049<br />
+                            INDIA
+                            </p></div>
+                </div>
+                <div class="row">
+                        <div class="col-4 first"><i class="fa fa-envelope"></i></div>
+                        <div class="col-8 second"><h4>Email Address</h4> 
+                            <p><a href="mailto:info@astutegrup.com">info@astutegrup.com</a></p>
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-4 first"><i class="fa fa-phone"  aria-hidden="true"></i></div>
+                            <div class="col-8 second"><h4>Phone Number</h4> 
+                                
+                                <p>+91 011 - 24654735</p></div>
+                        </div>
+            </div>
+            
+        </div>
+        <div class="col-8 width-480">
+                <div class="container">
+                        <div class="row">
+                          <div class="col">
+                                <form [formGroup]="login" novalidate class="form">
+                                        <div class="form-group">
+                                            <label for="name">Full Name*</label>
+                                            <input
+                                            placeholder="Full Name"
+                                            formControlName="name" 
+                                            name="name" 
+                                            type="text" 
+                                            class="form-control">
+                                            <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                                Full Name not be blank
+                                            </span>
+                                            
+                                        </div>
+                                            <div class="form-group">
+                                                    <label for="email">Email*</label>
+                                                    <input
+                                                    placeholder="Email" formControlName="email" 
+                                                    name="email" 
+                                                    type="email"
+                                                    class="form-control">
+                                                    <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                            <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                                    Email not be blank
+                                                            </span>
+                                                            <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                                        Email invalid
+                                                            </span>
+                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="subject">Subject*</label>
+                                                    <input
+                                                    placeholder="Subject" formControlName="subject" 
+                                                    name="subject" 
+                                                    type="text" 
+                                                    class="form-control">
+                                                    <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                                            Subject will not be blank
+                                                        </span>
+                                                </div>
+                                            
+                                            <div class="form-group">
+                                                    <label for="message">Company Name along with Your Message*</label>
+                                                    <textarea rows="6"
+                                                    placeholder="Your Message" formControlName="message" 
+                                                    name="message" 
+                                                    type="text" 
+                                                    class="form-control"></textarea>
+                                                    
+                                                    <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                                    Message will not be blank
+                                                    </span>
+                                            </div>
+                                             <button [disabled]="login.invalid" class="btn btn-primary btn-lg" (click)="onSubmit()">Submit</button>
+                                            <br /><br />
+                                    </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br />
+            <h3 class="text-center">Our Clients</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link show active" id="ites-tab" data-toggle="tab" href="#ites" role="tab" aria-controls="ites"
+                              aria-selected="true">IT & ITES</a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="automobile-tab" data-toggle="tab" href="#automobile" role="tab" aria-controls="automobile"
+                    aria-selected="false">Automobile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="banking-tab" data-toggle="tab" href="#banking" role="tab" aria-controls="banking"
+                    aria-selected="false">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="housing-tab" data-toggle="tab" href="#housing" role="tab" aria-controls="housing"
+                    aria-selected="false">Housing Finance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="insurance-tab" data-toggle="tab" href="#insurance" role="tab" aria-controls="insurance"
+                      aria-selected="false">Insurance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nbfc-tab" data-toggle="tab" href="#nbfc" role="tab" aria-controls="nbfc"
+                      aria-selected="false">NBFC</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="ites" role="tabpanel" aria-labelledby="ites-tab">
+                            <div class="container-fluid">
+                                    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                            <div class="carousel-item col-md-4 active">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Artha-logo.jpg" alt="slide 1">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/icici-merchant-logo.jpg" alt="slide 2">
+                                                
+                                            </div>                  
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/auth-bridge.jpg" alt="slide 3">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/matrix-business-logo.jpg" alt="slide 4">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/c-first-logo.jpg" alt="slide 5">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/serco-logo.jpg" alt="slide 6">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Citrus-logo.jpg" alt="slide 7">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/glry_4.jpg" alt="slide 8">
+                                            </div>
+
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/cognizent.jpg" alt="slide 8">
+                                            </div>
+                                            <div class="carousel-item col-md-4">
+                                                <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/essel-group-logo.jpg" alt="slide 8">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                    </div>
+                <div class="tab-pane fade" id="automobile" role="tabpanel" aria-labelledby="automobile-tab">
+                        <div class="container-fluid">
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                        <div class="carousel-item col-md-4 active">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/DaimlerFinancialServices1.jpg" title="DaimlerFinancialServices" class="single-image" alt="DaimlerFinancialServices">
+
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/bmw-financial-services1.png" title="bmw-financial-services1" class="single-image" alt="bmw-financial-services1">
+                                            
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Mercedes-Benz.png" title="Mercedes-Benz" class="single-image" alt="Mercedes-Benz">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/volkswagen-das-auto.jpg" title="volkswagen-das-auto" class="single-image" alt="volkswagen-das-auto">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Hinduja-Leyland-Finance-Logo11.png" title="Hinduja-Leyland-Finance-Logo11" class="single-image" alt="Hinduja-Leyland-Finance-Logo11">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/tvs-logo.png" title="tvs-logo" class="single-image" alt="tvs-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Ford_Credit-Logo.png" title="Ford_Credit-Logo" class="single-image" alt="Ford_Credit-Logo">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/hero-fin2.jpg" title="hero-fin" class="single-image" alt="hero-fin">
+                                        </div>
+
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Renault-Nissan-logo.png" title="Renault-Nissan-logo" class="single-image" alt="Renault-Nissan-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/bajajlogo1.jpg" title="bajajlogo" class="single-image" alt="bajajlogo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/SBI-Card.png" title="SBI-Card" class="single-image" alt="SBI-Card">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/tataMotorsFinance.png" title="tataMotorsFinance" class="single-image" alt="tataMotorsFinance">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/siemens-financial-services.png" title="siemens-financial-services" class="single-image" alt="siemens-financial-services">
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                                
+
+</div>
+                <div class="tab-pane fade" id="banking" role="tabpanel" aria-labelledby="banking-tab">
+                        <div class="container-fluid">
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                        <div class="carousel-item col-md-4 active">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/axis-bank-logo1.jpg" title="axis-bank-logo" class="single-image" alt="axis-bank-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Kotak-Mahindra-Bank.png" title="Kotak-Mahindra-Bank" class="single-image" alt="Kotak-Mahindra-Bank">
+                                            
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/IDBI_Bank_Logo.png" title="IDBI_Bank_Logo" class="single-image" alt="IDBI_Bank_Logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/corporation-bank-logo.png" title="corporation-bank-logo" class="single-image" alt="corporation-bank-logo">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Bank-of-Maharshtra-Logo.png" title="Bank-of-Maharshtra-Logo" class="single-image" alt="Bank-of-Maharshtra-Logo">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Punjab-National-Bank-logo.png" title="Punjab-National-Bank-logo" class="single-image" alt="Punjab-National-Bank-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/dbs-logo.png" title="dbs-logo" class="single-image" alt="dbs-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/ing-vysya.png" title="ing-vysya" class="single-image" alt="ing-vysya">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/ICICI-Bank_logo3.jpg" title="ICICI-Bank_logo" class="single-image" alt="ICICI-Bank_logo">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/DCB-Bank_moneycontrol.png" title="DCB-Bank_moneycontrol" class="single-image" alt="DCB-Bank_moneycontrol">
+                                        </div>
+
+
+
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Saraswat-Bank.png" title="Saraswat-Bank" class="single-image" alt="Saraswat-Bank">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/SBI-logo.png" title="SBI-logo" class="single-image" alt="SBI-logo">
+                                        </div>
+
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/federal-bank-logo.png" title="federal-bank-logo" class="single-image" alt="federal-bank-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Standard_Chartered.png" title="Standard_Chartered" class="single-image" alt="Standard_Chartered">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/RBL-Logo.jpg" title="RBL-Logo" class="single-image" alt="RBL-Logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/union-bank-logo.png" title="union-bank-logo" class="single-image" alt="union-bank-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/svc_bank.png" title="svc_bank" class="single-image" alt="svc_bank">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/hdfc-bank-logo.png" title="hdfc-bank-logo" class="single-image" alt="hdfc-bank-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Vijaya_Bank.png" title="Vijaya_Bank" class="single-image" alt="Vijaya_Bank">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/central-bank-of-India-logo.png" title="central-bank-of-India-logo" class="single-image" alt="central-bank-of-India-logo">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                </div>
+                <div class="tab-pane fade" id="housing" role="tabpanel" aria-labelledby="housing-tab">
+                        <div class="container-fluid">
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                        <div class="carousel-item col-md-4 active">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Aadhar-Logo.jpg" title="Aadhar-Logo" class="single-image" alt="Aadhar-Logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/dundaram-logo.png" title="dundaram-logo" class="single-image" alt="dundaram-logo">
+                                            
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/magma-logo.png" title="magma-logo" class="single-image" alt="magma-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/dhfl.jpg" title="dhfl" class="single-image" alt="dhfl">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/hdfc-limited-logo.png" title="hdfc-limited-logo" class="single-image" alt="hdfc-limited-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/mahindra-logo.png" title="mahindra-logo" class="single-image" alt="mahindra-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/aditya-birla-logo.png" title="aditya-birla-logo" class="single-image" alt="aditya-birla-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/iifl-logo.png" title="iifl-logo" class="single-image" alt="iifl-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/national-trust-logo.png" title="national-trust-logo" class="single-image" alt="national-trust-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/aptus-logo.png" title="aptus-logo" class="single-image" alt="aptus-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/images.png" title="images" class="single-image" alt="images">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/PNB_Logo.png" title="PNB_Logo" class="single-image" alt="PNB_Logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/a-u-housing-finance.png" title="a-u-housing-finance" class="single-image" alt="a-u-housing-finance">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/lt-finance.png" title="l&amp;t-finance" class="single-image" alt="l&amp;t-finance">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/vccircle_shriram-housing-fi_01.jpg" title="vccircle_shriram-housing-fi_0" class="single-image" alt="vccircle_shriram-housing-fi_0">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/canfinhomes-logo.png" title="canfinhomes-logo" class="single-image" alt="canfinhomes-logo">
+                                        </div>
+                                        <div class="carousel-item col-md-4">
+                                            <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/lic-logo.png" title="lic-logo" class="single-image" alt="lic-logo">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                </div>
+
+
+
+
+                  <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab"><div class="container-fluid">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                <div class="carousel-item col-md-4 active">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/download-3.jpg" title="download-(3)" class="single-image" alt="download-(3)"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/sbi-life.png" title="sbi-life" class="single-image" alt="sbi-life"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/aegon-religare-logo.png" title="aegon-religare-logo" class="single-image" alt="aegon-religare-logo"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Exide-Life-Logo.png" title="Exide-Life-Logo" class="single-image" alt="Exide-Life-Logo"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/ICICI_Lombard.png" title="ICICI_Lombard" class="single-image" alt="ICICI_Lombard"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/kotak-life-logo.png" title="kotak-life-logo" class="single-image" alt="kotak-life-logo"></div>
+                                    <div class="carousel-item col-md-4">
+                                    <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Reliance_Life_Insurance_Logo.png" title="Reliance_Life_Insurance_Logo" class="single-image" alt="Reliance_Life_Insurance_Logo"></div>
+                                    
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div></div>
+
+                    <div class="tab-pane fade" id="nbfc" role="tabpanel" aria-labelledby="nbfc-tab"><div class="container-fluid">
+                            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+                                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                    <div class="carousel-item col-md-4 active">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/chola.jpg" title="chola" class="single-image" alt="chola">
+                                    </div>
+                                    <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/reliance-capital-413x232.jpg" title="reliance-capital-413�232" class="single-image" alt="reliance-capital-413�232">
+                                    </div>
+                                    <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/angel-broking-logo.png" title="angel-broking-logo" class="single-image" alt="angel-broking-logo">
+                                    </div>
+                                    <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/hdfc-finance-logo.jpg" title="hdfc-finance-logo" class="single-image" alt="hdfc-finance-logo">
+                                    </div>
+                                    <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/fullerton-india.jpg" title="fullerton-india" class="single-image" alt="fullerton-india">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Shriram_logo.jpg" title="Shriram_logo" class="single-image" alt="Shriram_logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/avanse-financial-services.png" title="avanse-financial-services" class="single-image" alt="avanse-financial-services">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/muthoot-capital-logo.jpg" title="muthoot-capital-logo" class="single-image" alt="muthoot-capital-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/client15.jpg" title="client15" class="single-image" alt="client15">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/srei-logo_0.jpg" title="srei-logo_0" class="single-image" alt="srei-logo_0">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/bajaj-finserv-logo.png" title="bajaj-finserv-logo" class="single-image" alt="bajaj-finserv-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Ujjivan-logo.jpg" title="Ujjivan-logo" class="single-image" alt="Ujjivan-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/logo-AU-Finance1.jpg" title="logo-AU-Finance1" class="single-image" alt="logo-AU-Finance1">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/TCL-logo.jpg" title="TCL-logo" class="single-image" alt="TCL-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/Credila-logo.jpg" title="Credila-logo" class="single-image" alt="Credila-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/efa17cea3948f4aff5e43780d7d05fe5-300x201.jpg" title="efa17cea3948f4aff5e43780d7d05fe5-300�201" class="single-image" alt="efa17cea3948f4aff5e43780d7d05fe5-300�201">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/EFL_logo.jpg" title="EFL_logo" class="single-image" alt="EFL_logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/xcapital-first.jpg" title="xcapital-first" class="single-image" alt="xcapital-first">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/download-1.jpg" title="download-(1)" class="single-image" alt="download-(1)">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/essel-finance-logo.jpg" title="essel-finance-logo" class="single-image" alt="essel-finance-logo">
+                                    </div>
+                                        <div class="carousel-item col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="../../assets/images/clients_logo/vistaar_logo.jpg" title="vistaar_logo" class="single-image" alt="vistaar_logo">
+                                    </div>
+                                        
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div></div>
+
+                        
+
+              </div>
+             
+              <br />
+
+
+
+              
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col">
+            <table>
+                <tr *ngFor="let post of posts">
+                    <td>{{post.id}}</td>
+                      <td>{{post.name}}</td>
+                    <td>{{post.email}}</td>
+                    <td>{{post.subject}}</td>
+                    <td>{{post.message}}</td>
+                </tr>
+            </table>
+        </div>
+    </div> -->
+</div>
+
