@@ -40,6 +40,24 @@
         $("li.nav-item.dropdown div.dropdown-menu").removeClass("show");
       })
     })
+
+
+    $(document).ready(function() {
+      var btn = $('#myBtn');
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show').fadeIn(5000);
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
   </script>
  
 </body>

@@ -18,11 +18,11 @@ export class ProductService {
   constructor(private http:HttpClient) { }
 
   getdata(){
-    return this.http.get<Contact[]>('http://localhost/astutedatabase/list.php');
+    return this.http.get<Contact[]>('http://astutegrup.com/astutedatabase/list.php');
   }
 
   adddata(contact: Contact){
-    return this.http.post('http://localhost/astutedatabase/insert.php', contact);
+    return this.http.post('http://astutegrup.com/astutedatabase/insert.php', contact);
   }
 
 

@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,17 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'Astute Global Digital Wings';
   
+  constructor(private router: Router) { }
+
+    ngOnInit() {
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+        });
+    }
+
   
   onActivate(event) {
     window.scroll(0,0);
@@ -18,5 +30,6 @@ export class AppComponent {
   onRightClick(event) {
   event.preventDefault();
 }
+
 
 }

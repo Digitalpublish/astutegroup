@@ -119,3 +119,10 @@ h5{
     color: #083769;
     font-weight: 600;
 }
+
+
+.right-bottom{
+    width: 200px;
+    margin-top: 10px;
+    float: right;
+}

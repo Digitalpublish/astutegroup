@@ -130,3 +130,38 @@
     font-style: italic;
     font-family: script;
 }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    top: 350px;
+    right: 6px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #083769;
+    color: white;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 18px;
+  }
+
+  #myBtn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .show{
+    display: block !important;
+    transition: 3s display;
+}
